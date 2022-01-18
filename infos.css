@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#addcard{
+    background-color: #7f7f7f;
+    color: #f7ffff;
+    width: 100%;
+    font-weight: 600;
+    
+}
+#cancela{
+    border: none;
+    color: red;
+    padding: 15px;
+    width: 100%;
+}
+.cc-infos{
+    display: flex;
+
+}
+.ccnumber{
+    padding: 5px;
+}
+.cc-exp-val{
+    width: 50%;
+    padding: 5px;
+}
+.ccband{
+    position: relative;
+    bottom: 0px;
+    display: grid;
+    justify-content: end;
+    margin-right: 12px;
+}
+.help{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+}
+.label-exp{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Uber Eats</title>
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div style="padding: 0;" class="col-sm-12 col-md-6 col-lg-6">
+                    <img id="returnbtn" width="auto" src="return.png">
+                    <img id="buy" width="100%" src="paymenton.png">
+                    <script>
+                        let returnbtn = document.getElementById("returnbtn");
+                        let buy = document.getElementById("buy")
+                        
+                        buy.onclick=function(){
+                            window.open('addcreditcard.html');
+                        }
+                        
+                        returnbtn.onclick=function(){
+                            window.open('best-offers.html');
+                        }
+                    </script>
+                    <img width="100%" src="paymentoff.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <img width="auto" src="footer-login.jpg">
+    </footer>
+</body>
+</html>
